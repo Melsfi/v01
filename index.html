@@ -59,7 +59,21 @@
       height: 300px;
       margin-bottom: 1em;
     }
+.video-grid {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.video-grid iframe {
+  flex: 1 1 30%;
+  aspect-ratio: 16 / 9; /* всё будет ровно */
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  min-width: 280px;
+}
     .review {
       background: #ffffff;
       padding: 1em;
@@ -106,12 +120,15 @@
     </ul>
   </section>
 
-  <!-- Видео -->
-  <section>
-    <h2>Демо-тур по IDE</h2>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-  </section>
+<!-- Видео -->
+<section>
+  <h2>Демо-тур по IDE</h2>
+  <div class="video-grid">
+    <iframe src="https://www.youtube.com/watch?v=AWxT2WLJ5J0&t=4620s" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/watch?v=AWxT2WLJ5J0&t=4620s="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/watch?v=AWxT2WLJ5J0&t=4620s" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
 
   <!-- Отзывы -->
   <section>
